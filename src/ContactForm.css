@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+
+*{
+  margin:0;
+}
+
+body {
+  font-family: "Open Sans";
+  background: #4758DC;
+}
+
+#root{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.contactForm{
+  display: inline-flex;
+  padding: 30px 40px;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  border-radius: 20px;
+  background:  #FFF;
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.10);
+}
+
+h1{
+  color: #4758DC;
+  font-family: "Open Sans"; /*remember to add resources*/
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+form{
+  display: inline-flex;
+
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+input, textarea{
+  width:300px;
+  padding: 8px 10px;
+  border-radius: 4px;
+  background: #FFF;
+  border: 1px solid #989691;
+
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+textarea{
+  height:200px;
+  resize:none;
+  
+}
+
+input:default, textarea:default{
+  border: 1px solid #989691;
+  
+}
+
+input:valid, textarea:valid{
+  border: 1px solid #4758DC;
+}
+
+input:user-invalid{
+  border: 1px solid orange;
+}
+
+
+
+button{
+  padding: 8px 20px;
+  border-radius: 8px;
+
+  font-family: "Open Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+button:disabled{
+  border: 2px solid  #8B9ACE;
+  background:  #FFF;
+  cursor:not-allowed;
+  color:#8B9ACE;
+}
+
+button:enabled{
+  border: 2px solid  #4758DC;
+  background:  #4758DC;
+  cursor:pointer;
+  color:white;
+}
+
+span{
+  color: #4758DC;
+  font-family: Open Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+
+@media screen and (max-width:400px) {
+
+  #root{
+    margin-top: 30px;
+  }
+
+  .contactForm{
+    padding: 20px 30px;
+    border-radius: 10px;
+    gap:20px;
+  }
+  
+  h1{
+    font-size: 16px;
+  }
+
+  form{
+    gap:16px;
+  }
+
+  input, textarea{
+    width:200px;
+  }
+
+
+}
